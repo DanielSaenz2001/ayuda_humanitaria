@@ -26,14 +26,14 @@ COPY  docker/php.ini /usr/local/etc/php/php.ini
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
+COPY  .env /var/www/html/.env
+COPY  . /var/www/html/
+WORKDIR /var/www/html/
+
 #-----------------Local----------------#
-#RUN chmod -R 775 /var/www/html/storage
+RUN chmod -R 775 /var/www/html/storage
 
 # --------------Producción----------------#
-
-#COPY  .env /var/www/html/.env
-#COPY  . /var/www/html/
-#WORKDIR /var/www/html/
 
 #RUN chown -R www-data:www-data /var/www/html  \
 #    && composer install  && composer dumpautoload
