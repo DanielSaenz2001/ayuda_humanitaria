@@ -12,5 +12,5 @@ Route::group([
     'middleware' => 'api',
     'namespace'  => 'App\Http\Controllers',
 ], function () {
-
+    Route::get('user', 'UserController@index');
 });

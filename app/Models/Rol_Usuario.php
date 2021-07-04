@@ -7,17 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rol_Usuario extends Model{
 
-    protected $table = 'fincas';
+    protected $table = 'rol_usuario';
 
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_rol_usuario';
 
     public $timestamps = false;
 
     protected $fillable = [
-        'email','nombres','apellido_paterno'
-        ,'apellido_materno','dni','fecha_nacimiento'
-        ,'fecha_inscripcion','sexo','direccion'
-        ,'celular','finca_id','password'
+        'id_rol','id_usuario'
     ];
     
 }

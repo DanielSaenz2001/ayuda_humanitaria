@@ -9,17 +9,16 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable{
     
-    protected $table = 'productores';
+    protected $table = 'usuario';
 
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_usuario';
 
     public $timestamps = false;
 
     protected $fillable = [
-        'email','nombres','apellido_paterno'
-        ,'apellido_materno','dni','fecha_nacimiento'
-        ,'fecha_inscripcion','sexo','direccion'
-        ,'celular','finca_id','password'
+        'usuario','password','nombres'
+        ,'apellido_paterno','apellido_materno','dni'
+        ,'celular','fecha_nacimiento','sexo','email','estado'
     ];
 
     protected $hidden = [
