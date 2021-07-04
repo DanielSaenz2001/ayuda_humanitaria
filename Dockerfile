@@ -31,7 +31,8 @@ COPY  . /var/www/html/
 WORKDIR /var/www/html/
 
 #-----------------Local----------------#
-RUN chmod -R 775 /var/www/html/storage
+RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R 777 /var/www/html/storage
 
 # --------------Producción----------------#
 
