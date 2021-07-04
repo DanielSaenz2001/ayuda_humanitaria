@@ -12,7 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\ChangePasswordController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/recuperar', function () {
+    return view('recuperar');
+});
+
+
+Route::post('/recuperar/contra',[ChangePasswordController::class, 'process'])->name('recuperar.contra');
