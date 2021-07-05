@@ -7,7 +7,7 @@ use App\Models\Tipo_Pedidos;
 
 class TipoNecesidadController extends Controller{
     public function __construct() {
-        //$this->middleware('auth.role:1');
+        $this->middleware('auth.role:1');
      }
      public function index(){
          $resquest  = Tipo_Pedidos::paginate(20);
