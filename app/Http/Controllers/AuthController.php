@@ -54,7 +54,7 @@ class AuthController extends Controller{
         return response()->json(auth()->user());
     }
     public function roles(){
-        $roles_user =Rol_Usuario::where('id_usuario',auth()->user()->id)
+        $roles_user =Rol_Usuario::where('id_usuario',auth()->user()->id_usuario)
         ->join('rol','rol.id','rol_usuario.id_rol')
         ->select('rol_usuario.id','rol.nombre_rol','rol_usuario.id_rol')->get();
         return response()->json($roles_user);

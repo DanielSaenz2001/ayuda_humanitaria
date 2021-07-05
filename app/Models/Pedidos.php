@@ -15,7 +15,7 @@ class Pedidos extends Model{
     
     protected $fillable = [
         'nombres','apellido_paterno','apellido_materno'
-        ,'dni','sexo','email','numero_celular','direccion'
-        ,'necesidad','descripcion','tipo_necedidad_id'
+        ,'dni','sexo','email','numero_celular','referencia'
+        ,'descripcion','tipo_necedidad_id'.'latitud','longitud'
     ];
 }
