@@ -10,7 +10,7 @@ use Response;
 
 class UserController extends Controller{
     public function __construct() {
-       // $this->middleware('auth.role:1');
+       //$this->middleware('auth.role:1');
     }
     public function index(){
         $resquest  = User::paginate(20);
