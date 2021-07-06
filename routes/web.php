@@ -22,6 +22,22 @@ Route::get('/nosotros', function () {
     return view('nosotros');
 });
 
+Route::get('/psicologia', function () {
+    return view('psicologia');
+});
+
+Route::get('/computacion', function () {
+    return view('computacion');
+});
+
+Route::get('/educacion', function () {
+    return view('educacion');
+});
+
+Route::get('/hacemos', function () {
+    return view('hacemos');
+});
+
 Route::get('/recuperar', function () {
     return view('recuperar');
 });

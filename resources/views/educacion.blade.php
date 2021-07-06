@@ -39,11 +39,12 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
+                                 
                                  <li> <a href="{{ url('/') }}">Inicio</a> </li>
-                                 <li  class="active"> <a href="{{ url('/nosotros') }}">Nosotros</a> </li>
+                                 <li> <a href="{{ url('/nosotros') }}">Nosotros</a> </li>
                                  <li><a href="{{ url('/psicologia') }}">Psicologia</a></li>
                                  <li><a href="{{ url('/computacion') }}">Computación</a></li>
-                                 <li><a href="{{ url('/educacion') }}">Educación</a></li>
+                                 <li class="active"><a href="{{ url('/educacion') }}">Educación</a></li>
                                  <li><a href="{{ url('/hacemos') }}">Hacemos</a></li> 
                                  <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
                               </ul>
@@ -54,43 +55,49 @@
                </div>
             </div>
          </div>
-         
-         <!-- end header inner -->
       </header>
       
-      <div class="about">
+      
+      <div class="Library">
          <div class="container">
             <div>
-               <p></p>
+               <br>
                <br>
             </div>
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <div class="aboutheading">
-                     <h2> ¿ Que <strong class="black"> Hacemos ? </strong></h2>
-                     <span>Se brindan diferentes tipos de ayuda a las familias
-                        como por ejemplo:</span>
+                  <div class="titlepage">
+                     <h2>Educación  <strong class="black">Economica </strong></h2>
+                     <span>La educación economica como un derecho del ser humano nos ayuda a desarrollar diversas habilidades financieras, 
+                        en diferentes áreas del conocimiento y creatividad, es un proceso de socialización, se dan charlas en
+                         grupos de trabajo voluntario, ademas se colabora y se interactúa en la solución de problemas concretos.</span> 
                   </div>
                </div>
             </div>
-            <div class="row border">
-               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                  <div class="about-box">
-                     <p> Los apoyos familiares y apoyos de las redes de padres y niños con discapacidad. También se destaca el papel de los apoyos profesionales y por lo tanto cómo los recortes en servicios públicos de tipo sanitario y social han agudizado una inequidad en salud en relación a las familias que pueden o no disponer de servicios adicionales. Se sugieren otros enfoques en los servicios que pueden apoyar a las familias. </p>
-                     <a href="about.html">Leer Más</a>
+         </div>
+         <div class="bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div class="Library-box">
+                        <figure><img src="images/economica.png" alt="#" class="center-psico"/></figure>
+                        
+                     </div>
                   </div>
                </div>
-               <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                  <div class="about-box">
-                     <figure><img src="images/banner22.jpg" alt="img"/></figure>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="read-more">
+                     <a href="#" >Read More</a>
                   </div>
                </div>
             </div>
          </div>
       </div>
       
-      <!-- end QUE HACEMOS -->
-      <!-- footer -->
       <footer>
          <div class="footer">
             <div class="container">
@@ -122,14 +129,11 @@
             </div>
          </div>
       </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
-      <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
    </body>

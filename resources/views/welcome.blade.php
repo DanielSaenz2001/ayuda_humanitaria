@@ -45,11 +45,11 @@
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="{{ url('/') }}">Inicio</a> </li>
                                  <li> <a href="{{ url('/nosotros') }}">Nosotros</a> </li>
-                                 <li><a href="psicologia.html">Psicologia</a></li>
-                                 <li><a href="computacion.html">Computación</a></li>
-                                 <li><a href="educacion.html">Educación</a></li>
-                                 <li><a href="hacemos.html">Hacemos</a></li> 
-                                 <li class="mean-last"> <a href="login.html"><img src="images/top-icon.png" alt="#" /></a> </li>
+                                 <li><a href="{{ url('/psicologia') }}">Psicologia</a></li>
+                                 <li><a href="{{ url('/computacion') }}">Computación</a></li>
+                                 <li><a href="{{ url('/educacion') }}">Educación</a></li>
+                                 <li><a href="{{ url('/hacemos') }}">Hacemos</a></li> 
+                                 <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
                               </ul>
                            </nav>
                         </div>
