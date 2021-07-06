@@ -196,9 +196,6 @@
       </style>
     </head>
     <body class="antialiased">
-        <div class="loader_bg">
-            <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-        </div>
         <header>
             <div class="header">
             <div class="container">
