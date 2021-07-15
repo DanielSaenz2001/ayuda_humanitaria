@@ -41,6 +41,9 @@ Route::get('/hacemos', function () {
 Route::get('/recuperar', function () {
     return view('recuperar');
 });
+Route::get('/power', function () {
+    return view('power_bi');
+});
 
 
 Route::post('/recuperar/contra',[ChangePasswordController::class, 'process'])->name('recuperar.contra');
