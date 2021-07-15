@@ -19,8 +19,7 @@
 
 
     </head>
-   <body class="main-layout home_page">
-      hola mundo
-      <iframe width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=b2ac5b21-c9d0-4ccf-8bd0-2bc07ecd5124&autoAuth=true&ctid=4dd133fd-ca2a-4098-ae91-0eaa0c5823b8&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+   <body style="margin:0px;padding:0px;overflow:hidden">
+      <iframe style="overflow:hidden;height:100%;width:100%"  width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=b2ac5b21-c9d0-4ccf-8bd0-2bc07ecd5124&autoAuth=true&ctid=4dd133fd-ca2a-4098-ae91-0eaa0c5823b8&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
    </body>
 </html>
