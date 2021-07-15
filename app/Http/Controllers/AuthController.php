@@ -67,9 +67,7 @@ class AuthController extends Controller{
         return response()->json([
             'access_token' => $token,
             'token_type' => 'Bearer',
-            'expires_in' => auth()->factory()->getTTL()." minutos",
-            'user' => auth()->user()->id,
-            'email' => auth()->user()->email
+            'expires_in' => auth('api')->factory()->getTTL() * 60
         ],200);
     }
     protected function jsonResponse($data, $code = 200){
