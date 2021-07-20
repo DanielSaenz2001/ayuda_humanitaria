@@ -23,7 +23,7 @@ class RoleAuthorization
         }catch (JWTException $e) {
             return $this->unauthorized('Por favor, adjunte un token de portador a su solicitud.');
         }
-        $roles_user =Rol_Usuario::where('user_id',$user->id)->select('rol_id')->get();
+        $roles_user =Rol_Usuario::where('id_usuario',$user->id)->select('id_rol')->get();
 
         $estado=false;
         foreach ($roles_user as $r) {
