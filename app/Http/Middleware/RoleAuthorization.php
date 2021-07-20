@@ -28,7 +28,7 @@ class RoleAuthorization
         $estado=false;
         foreach ($roles_user as $r) {
             
-            if(in_array($r->rol_id, $roles)){
+            if(in_array($r->id_rol, $roles)){
                 $estado = $estado || true;
             }
             $estado = $estado || false;
@@ -45,8 +45,7 @@ class RoleAuthorization
     private function unauthorized($user,$roles_user,$message = null){
         return response()->json([
             'error' => 'Autorización',
-            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.'.$user,
-            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.'.$roles_user,
+            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.',
             'success' => false
         ], 401);
     }
