@@ -23,7 +23,7 @@ class RoleAuthorization
         }catch (JWTException $e) {
             return $this->unauthorized('Por favor, adjunte un token de portador a su solicitud.');
         }
-        $roles_user =Rol_Usuario::where('id_usuario',$user->id)->select('id_rol')->get();
+        $roles_user =Rol_Usuario::where('id_usuario',$user->id_usuario)->select('id_rol')->get();
 
         $estado=false;
         foreach ($roles_user as $r) {
@@ -39,13 +39,13 @@ class RoleAuthorization
             return $next($request);
         }
     
-        return $this->unauthorized($user);
+        return $this->unauthorized();
     }
     
-    private function unauthorized($roles_user,$message = null){
+    private function unauthorized($message = null){
         return response()->json([
             'error' => 'Autorización',
-            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.'.$roles_user,
+            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.',
             'success' => false
         ], 401);
     }
