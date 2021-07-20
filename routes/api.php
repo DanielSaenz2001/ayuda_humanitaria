@@ -58,7 +58,7 @@ Route::group([
     Route::post('Pedidos', 'PedidoController@create');
     Route::put('Pedidos/{id}', 'PedidoController@update');
     Route::delete('Pedidos/{id}', 'PedidoController@destroy');
-    Route::get('Pedidos', 'PedidoController@tipos');
+    Route::get('PedidosTipos', 'PedidoController@tipos');
 
     
     /*   MeController   */
