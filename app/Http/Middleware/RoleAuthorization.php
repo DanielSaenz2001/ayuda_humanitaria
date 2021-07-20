@@ -45,7 +45,8 @@ class RoleAuthorization
     private function unauthorized($message = null){
         return response()->json([
             'error' => 'Autorización',
-            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.',
+            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.'.$user,
+            'message' => $message ? $message : 'No está autorizado para acceder a este recurso.'.$roles_user,
             'success' => false
         ], 401);
     }
