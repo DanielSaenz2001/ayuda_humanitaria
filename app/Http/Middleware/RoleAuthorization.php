@@ -39,10 +39,10 @@ class RoleAuthorization
             return $next($request);
         }
     
-        return $this->unauthorized();
+        return $this->unauthorized($user,$roles_user);
     }
     
-    private function unauthorized($message = null){
+    private function unauthorized($user,$roles_user,$message = null){
         return response()->json([
             'error' => 'Autorización',
             'message' => $message ? $message : 'No está autorizado para acceder a este recurso.'.$user,
